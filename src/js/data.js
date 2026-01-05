@@ -1,0 +1,167 @@
+// All course details data
+export const courseDetails = [
+    {
+        id: 1,
+        image: 'images/development.jpg',
+        category: 'Web Development',
+        title: 'Become a Certified Web Designer',
+        duration: '2h 30m',
+        levels: 'Beginner',
+        lessons: '12 Lessons',
+        price: '10,000',
+        featured: false,
+        heroDescription: 'Learn the fundamentals of web design and development with this comprehensive course.',
+        tutorImage: 'src/images/tutor1.jpg',
+        tutorName: 'Jane Doe',
+        courseInformation: {
+            infoDescription: 'This course covers HTML, CSS, JavaScript, and responsive design principles to help you create stunning websites.',
+            whatYouWillLearn: [
+                'HTML5 and CSS3 basics',
+                'JavaScript fundamentals',
+                'Responsive design techniques',
+                'Creating interactive web elements',
+                'Building a portfolio website'
+            ],
+            requirements: [
+                'Basic knowledge of web development',
+                'Basic knowledge of HTML, CSS, and JavaScript',
+                'Basic knowledge of responsive design'
+            ],
+            requirementsDescription: 'No prior experience is required, but a basic understanding of web development concepts will be helpful.',
+        }
+
+
+    },
+
+    {
+        id: 2,
+        image: 'images/development.jpg',
+        category: 'Graphic Design',
+        title: 'Mastering Adobe Illustrator',
+        duration: '2h 30m',
+        lessons: '12 Lessons',
+        levels: 'Beginner',
+        price: '5,000',
+        featured: false,
+        heroDescription: 'Learn the fundamentals of Adobe Illustrator with this comprehensive course.',
+        tutorImage: 'src/images/tutor2.jpg',
+        tutorName: 'John Doe',
+        courseInformation: {
+            infoDescription: 'This course covers the basics of Adobe Illustrator, including creating vector graphics, text, and shapes.',
+            whatYouWillLearn: [
+                'Creating vector graphics',
+                'Using the pen tool',
+                'Working with text and shapes',
+                'Working with layers and groups',               
+            ],
+            requirements: [
+                'Basic knowledge of Adobe Illustrator',
+                'Basic knowledge of vector graphics',
+                'Basic knowledge of text and shapes'
+            ],
+            requirementsDescription: 'No prior experience is required, but a basic understanding of Adobe Illustrator concepts will be helpful.',
+        }
+    },
+
+    {
+        id: 3,
+        image: 'images/development.jpg',
+        category: 'Digital Marketing',
+        title: 'Digital Marketing Fundamentals',
+        duration: '2h 30m',
+        lessons: '12 Lessons',
+        levels: 'Beginner',
+        price: '5,000',
+        featured: false,
+        heroDescription: 'Learn the fundamentals of digital marketing with this comprehensive course.',
+        tutorImage: 'src/images/tutor3.jpg',
+        tutorName: 'Jane Doe',
+        courseInformation: {
+            infoDescription: 'This course covers SEO, social media marketing, email marketing, and content marketing strategies to help you grow your online presence.',
+            whatYouWillLearn: [
+                'Search engine optimization (SEO)',
+                'Social media marketing',
+                'Email marketing',
+                'Content marketing',                
+            ],
+            requirements: [
+                'Basic knowledge of SEO',
+                'Basic knowledge of social media marketing',
+                'Basic knowledge of email marketing',
+                'Basic knowledge of content marketing'
+            ],
+            requirementsDescription: 'No prior experience is required, but a basic understanding of digital marketing concepts will be helpful.',
+        }
+    },
+
+    {
+        id: 4,
+        image: 'images/development.jpg',
+        category: 'Photography',
+        title: 'Photography Basics for Beginners',
+        duration: '2h 30m',
+        lessons: '12 Lessons',
+        levels: 'Beginner',
+        price: '10,000',
+        featured: false,
+        heroDescription: 'Learn the basics of photography with this comprehensive course.',
+        tutorImage: 'src/images/tutor4.jpg',
+        tutorName: 'John Doe',
+        courseInformation: {
+            infoDescription: 'This course covers the basics of photography, including camera settings, composition, and lighting techniques.',
+            whatYouWillLearn: [ 
+                'Camera settings',                
+                'Composition principles',
+                'Lighting techniques',
+                'Using a tripod',
+                'Using a flash',
+                'Using a lens',
+                'Using a camera',
+            ],
+            requirements: [
+                'Basic knowledge of photography',
+                'Basic knowledge of camera settings',
+                'Basic knowledge of composition principles',
+                'Basic knowledge of lighting techniques'
+            ],
+            requirementsDescription: 'No prior experience is required, but a basic understanding of photography concepts will be helpful.',
+        }
+    }
+      
+];
+
+
+// All Category Details Data
+export const categoryDetails = [
+    {
+        id: 1,
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-source-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5" /><path d="M6 5l-2 2l2 2" /><path d="M10 9l2 -2l-2 -2" /></svg>',
+        category: 'Development',
+        title: 'Web Development',
+        numberOfCourses: 18,
+    },
+
+    {
+        id: 2,
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-icons text-blue-800"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 6.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0" /><path d="M2.5 21h8l-4 -7l-4 7" /><path d="M14 3l7 7" /><path d="M14 10l7 -7" /><path d="M14 14h7v7h-7l0 -7" /></svg>',
+        category: 'Design',
+        title: 'Graphic Design',
+        numberOfCourses: 12,
+    },
+
+    {
+        id: 3,  
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-loom"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.464 6.518a6 6 0 1 0 -3.023 7.965" /><path d="M17.482 17.464a6 6 0 1 0 -7.965 -3.023" /><path d="M6.54 17.482a6 6 0 1 0 3.024 -7.965" /><path d="M6.518 6.54a6 6 0 1 0 7.965 3.024" /></svg>',
+        category: 'Photography',
+        title: 'Photography',
+        numberOfCourses: 10,
+    },
+
+    {
+        id: 4,
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-store"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 0" /><path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" /><path d="M5 21l0 -10.15" /><path d="M19 21l0 -10.15" /><path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" /></svg>',
+        category: 'Marketing',
+        title: 'Digital Marketing',
+        numberOfCourses: 8,
+    }
+];

@@ -6,12 +6,17 @@
     <title>Glint-tech Online Tech online | glint-tech</title>
 
     <link rel="stylesheet" href="./output.css">
+
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
 <body>
     
 
     <div class="main-container w-full h-auto flex flex-col">
-        <div class="contact-header w-full h-auto flex flex-row justify-between items-start py-2 px-4 bg-blue-900 text-slate-100 md:px-8 lg:px-[150px] xl:px-[200px]">
+
+        <!-- Contact Header -->
+        <div class="contact-header w-full h-auto flex flex-row justify-between items-start py-2 px-4 bg-blue-900 text-slate-100 md:px-8 lg:px-[100px] xl:px-[150px]">
             <div class="location-container w-fit h-auto  hidden flex-row justify-start items-center gap-2 md:flex lg:flex">
                 <div class="icon-container hidden lg:flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg></div>
 
@@ -37,10 +42,12 @@
             </div>
         </div>
 
-        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[150px] xl:px-[200px] relative">
+        <!-- Navigation Bar -->
+        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[100px] xl:px-[150px] relative">
             <a href="index.html" class="hover:animate-pulse w-fit h-auto">
                 <div class="logo-container">
-                    <img src="" alt="glintech-logo">
+                    <!-- <img src="" alt="glintech-logo"> -->
+                    <h2 class="font-bold text-2xl">Glintech <span class="text-blue-800">Academy</span></h2>
                 </div>
             </a>
 
@@ -59,11 +66,12 @@
 
 
             <!-- Mobile Menu -->
-             <div class="mobile-menu-container md:hidden flex flex-col justify-start items-start bg-slate-50 rounded-md absolute top-1 left-0 w-full h-auto shadow-lg transition-all px-4 py-8 gap-8 -translate-y-[200%] delay-200 duration-200 ease-in">
+             <div class="mobile-menu-container md:hidden flex flex-col justify-start items-start bg-slate-50 rounded-md absolute top-1 left-0 w-full h-auto shadow-lg transition-all px-4 py-8 gap-8 -translate-y-[200%] opacity-0 delay-75 duration-200 ease-in">
                 <div class="menu-head w-full h-auto flex flex-row justify-between items-center">
                     <a href="index.html">
                         <div class="logo-container">
-                            <img src="" alt="glint-tech-logo">
+                            <!-- <img src="" alt="glint-tech-logo"> -->
+                            <h2 class="text-2xl font-bold">Glintech <span class="text-blue-800">Academy</span></h2>
                         </div>
                     </a>
 
@@ -83,7 +91,8 @@
              </div>
         </nav>
 
-        <section class="hero-section w-full h-auto flex flex-col justify-start items-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:px-[200px]">
+        <!-- Hero Section -->
+        <section class="hero-section w-full h-auto flex flex-col justify-start items-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:px-[100px] xl:px-[150px]">
             <div class="hero-top w-full h-auto flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:items-center">
 
                 <div class="group-and-button w-full h-auto flex flex-col justify-center items-center gap-8 md:w-[60%] md:justify-start md:items-start">
@@ -106,8 +115,276 @@
 
             
         </section>
+
+        <!-- Featured Courses Section -->        
+        <section class="courses-section w-full h-auto flex flex-col justify-start items-start px-4 py-8 md:px-8 lg:px-[100px] xl:px-[150px] gap-8 bg-blue-50">
+
+            <!-- Featured Courses Header -->
+            <div class="section-header w-full h-auto flex flex-col justify-start items-center gap-4 md:flex-row md:justify-between md:items-center">
+                <h2 class="font-bold text-3xl text-slate-700 text-center w-full md:text-start md:w-fit">Our <span class="text-blue-800">Featured</span> Courses</h2>
+
+                <div class="categories-container w-full h-auto flex flex-row justify-center items-center gap-4 overflow-x-auto md:w-fit">
+                    <div class="all-courses w-fit font-semibold hover:text-blue-800 cursor-pointer text-blue-800" id="all-courses">All Courses</div>
+                    <div class="design-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="design">Design</div>
+                    <div class="marketing-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="marketing">Marketing</div>
+                    <div class="development-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="development">Development</div>
+                </div>
+            </div>
+
+            <!-- Courses Cards -->
+            <div class="courses-cards-container w-full h-auto flex flex-col justify-start items-stretch gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-4 lg:gap-4">
+                <!-- Course Cards will go here -->
+                 <!-- <div class="course-card w-full h-auto flex flex-col justify-start items-start gap-4 bg-white rounded-md px-3 py-3 cursor-pointer transition-all delay-150 duration-200 ease-in hover:shadow-lg">
+
+                    <div class="course-image w-full h-[180px] overflow-hidden rounded-md">
+                        <img src="./images/development.jpg" alt="course image" class="w-full h-auto rounded-md object-cover">
+                    </div>
+
+                    <div class="course-details w-full h-auto flex flex-col justify-start items-start gap-3">
+                        <span class="bg-blue-50 px-4 py-1 rounded-lg font-semibold">Development</span>
+                        <h2 class="font-semibold text-lg">Become a Certified Web Designer</h2>
+
+                        <div class="details-icons w-full h-auto flex flex-row justify-start items-center gap-6 border-b border-slate-200 pb-3">
+                            <div class="duration w-fit h-auto flex flex-row justify-start items-center gap-2 text-slate-600">
+                                <div class="icon-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+                                </div>
+
+                                <p>2h 30min</p>
+                            </div>
+
+                            <div class="lessons w-fit h-auto flex flex-row justify-start items-center gap-2 text-slate-600">
+                                <div class="icon-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2" /><path d="M6 12h12" /><path d="M10 16h4" /></svg>
+                                </div>
+
+                                <p>12 Lessons</p>
+                            </div>
+                        </div>
+
+                        <div class="price w-fit h-auto text-blue-800 font-semibold text-2xl">N7,000.00</div>
+                    </div>
+
+                    <a href="course.html" class="button w-full h-auto flex flex-row justify-center items-center gap-2 bg-slate-100 text-blue-800 font-semibold py-2 rounded-md hover:bg-blue-800 hover:text-slate-100 transition-all delay-75 duration-100 ease-in">Enroll</a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Courses by Category Section -->
+        <section class="courses-category-section w-full h-auto flex flex-col justify-start items-start px-4 py-8 md:px-8 lg:px-[100px] xl:px-[150px] gap-6 md:py-16">
+
+            <!-- Courses by Category will go here -->
+             <div class="section-header w-full h-auto flex flex-col justify-start items-start gap-1 md:flex-row md:justify-between md:items-center">
+                <h2 class="section-title font-bold text-3xl text-center py-4 md:text-4xl text-slate-700 w-full md:w-fit">Browse By <span class="text-blue-800">Categories</span></h2>
+
+                <a href="courses.html" class="secondary-button w-full h-auto flex justify-center items-center gap-2 py-2 px-4 text-center border text text-blue-800 rounded-md md:w-fit hover:bg-blue-50">All Categories</a>
+             </div>
+
+             <div class="categories-card-container w-full h-auto flex flex-col justify-start items-stretch gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+                <!-- Category Cards will go here -->
+
+                <!-- <a href="courses.html" class="category-card w-full h-auto flex flex-row justify-start items-center gap-4 bg-blue-50 rounded-md px-4 py-6 cursor-pointer transition-all delay-150 duration-200 ease-in md:flex-col">
+                    <div class="icon-container bg-white w-fit h-auto p-8 rounded-md text-blue-800 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-icons text-blue-800"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 6.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0" /><path d="M2.5 21h8l-4 -7l-4 7" /><path d="M14 3l7 7" /><path d="M14 10l7 -7" /><path d="M14 14h7v7h-7l0 -7" /></svg>
+                    </div>
+
+                    <div class="category-text w-full h-auto flex flex-col justify-start items-start gap-2 text-start md:text-center md:items-center">
+                        <p class="font-medium text-slate-700 text-start text-2xl md:text-center">Web Development</p>
+                        <p class="text-start font-semibold text-lg text-slate-600 md:text-center">19 Courses</p>
+                    </div>
+                </a> -->
+
+                
+             </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section w-full h-auto flex flex-col justify-center items-center bg-blue-50 py-32 px-4 md:px-8 lg:px-[100px] xl:px-[150px]">
+            <div class="stats-container w-full h-auto flex flex-col justify-center items-stretch gap-8 md:grid-cols-2 md:grid lg:grid-cols-3 md:gap-3 lg:gap-4">
+                <!-- Stats will go here -->
+
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                    <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
+                        <h2 class="stat-number font-bold text-4xl text-slate-700">50+</h2>
+                        <p class="stat-description text-lg text-slate-600">Courses Available</p>
+                    </div>
+
+                    <div class="stat-illustration w-[200px] h-auto overflow-hidden">
+                        <img src="./images/card-illustration(2).jpg" alt="courses icon" class="w-full h-auto">
+                    </div>
+                </div>
+
+
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                    <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
+                        <h2 class="stat-number font-bold text-4xl text-slate-700">15k</h2>
+                        <p class="stat-description text-lg text-slate-600">Active Learners</p>
+                    </div>
+
+                    <div class="stat-illustration w-[200px] h-auto overflow-hidden">
+                        <img src="./images/card-illustration(1).jpg" alt="courses icon" class="w-full h-auto">
+                    </div>
+                </div>
+
+
+
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                    <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
+                        <h2 class="stat-number font-bold text-4xl text-slate-700">20+</h2>
+                        <p class="stat-description text-lg text-slate-600">Experienced Instructors </p>
+                    </div>
+
+                    <div class="stat-illustration w-[200px] h-auto overflow-hidden">
+                        <img src="./images/card-illustration(3).jpg" alt="courses icon" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refer and Earn Section -->
+        <section class="refer-and-earn-section relative w-full h-auto bg-[url(./images/development.jpg)] bg-cover bg-top bg-fixed px-4 py-24">
+            <!-- Refer and Earn Section will go here -->
+             <div class="overlay bg-gradient-to-r from-blue-500 to-blue-500 w-full h-full absolute inset-0 z-1 top-0 left-0 opacity-50"></div>
+
+            <div class="text-group w-full h-auto flex flex-col justify-center items-center gap-4  md:px-8 lg:px-[200px] text-slate-100  overflow-hidden relative z-20">
+
+                <h2 class="font-semibold text-5xl">Refer and Earn</h2>
+                <p class="font-semibold text-lg">Refer your friends and earn</p>
+
+                <a href="courses.html" class="primary-button py-2 px-4 bg-blue-800 text-white font-semibold border border-blue-800 rounded-md hover:bg-slate-200 hover:px-5 hover:text-blue-800 transition-all delay-75 duration-100 ease-in">Refer Now</a>
+            </div>
+        </section>
+
+
+        <!-- Instructors Section -->
+        <section class="instructors-section w-full h-auto flex flex-col justify-start items-start px-4 py-8 md:px-8 lg:px-[100px] xl:px-[150px] gap-8">
+
+            <!-- Instructors Section will go here -->
+             <div class="instructors-cards-container w-full h-auto flex flex-col justify-start items-center gap-8 md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-6 lg:gap-8">
+
+                <!-- Instructor Cards will go here -->
+                 <div class="instructor-card w-full h-auto flex flex-col justify-start items-start gap-4 bg-white rounded-md px-4 py-8 cursor-pointer transition-all delay-150 duration-200 ease-in border border-slate-200">
+                    <div class="name-and-image w-full h-auto flex flex-col justify-start items-center gap-4">
+                        <div class="image w-[150px] h-[150px] md:w-[150px] md:h-[150px] flex flex-col justify-center items-center gap-4 rounded-full mx-auto overflow-hidden">
+                             <img src="./images/portrait.jpg" alt="instructor image" class="w-full h-auto object-contain object-center">
+                        </div>
+
+                    <div class="bio w-full h-auto flex flex-col justify-center items-center gap-2 text-center">
+                        <h3 class="name w-full h-auto font-semibold text-2xl text-slate-700">Jane Doe</h3>
+                        <p class="title w-full h-auto text-sm text-slate-600">Senior Web Developer</p>
+                    </div>
+                </div>
+
+                <div class="number-of-students w-full h-auto flex flex-row justify-center items-center gap-4 border-t border-slate-200 pt-4">
+                    <div class="icon-container text-blue-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                    </div>
+                         <p class="students-count text-slate-500">1,200 Students</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section class="join-us-section w-full h-auto flex flex-col justify-center items-center gap-4 px-4 py-24 md:px-8 lg:px-[200px] bg-blue-50">
+            <!-- Join Us Section will go here -->
+             <h2 class="font-bold text-3xl text-slate-700 text-center w-full md:text-4xl">Join <span class="text-blue-800">Thousands</span> of Learners Today!</h2>
+             <p class="font-normal text-slate-600 text-center w-full md:w-[60%]">Unlock your potential with our expert-led courses. Start learning new skills and advancing your career today!</p>
+
+             <a href="courses.html" class="primary-button py-2 px-4 bg-blue-800 rounded-md text-white hover:bg-blue-950 hover:px-5 transition-all delay-75 duration-100 ease-in w-full text-center md:w-fit">Get Started Now</a>
+
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section bg-[url(./images/map.jpg)] 
+         bg-cover bg-fixed w-full h-auto px-4 py-12 md:px-8 lg:px-[200px] relative overflow-hidden">
+
+
+             <div class="overlay bg-white/80 w-full h-full absolute inset-0 z-1 top-0 left-0"></div>
+            
+            <div class="header-group w-full h-auto flex flex-col justify-center items-center gap-4 mb-12 relative z-20">
+                <h2 class="font-bold text-3xl text-slate-700 text-center w-full md:text-4xl">What Our <span class="text-blue-800">Learners</span> Say</h2>
+                <p class="font-normal text-slate-600 text-center w-full md:w-[60%] mx-auto">Hear from our satisfied learners who have transformed their careers with our practical online courses.</p>
+            </div>
+            <!-- Testimonials Section will go here -->
+               
+
+                <div class="testimonial-card relative w-full h-auto flex flex-col justify-center items-center gap-6 bg-white rounded-md px-6 py-8 cursor-pointer transition-all delay-150 duration-200 ease-in shadow-lg max-w-2xl mx-auto z-20">
+                    <div class="quote">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-quote text-slate-300"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" /><path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z" /></svg>
+                    </div>
+
+                    <p class="text-slate-600 font-semibold">
+                        "The courses offered here have transformed my career. The practical approach and expert instructors made learning enjoyable and effective. Highly recommended!"
+                    </p>
+
+                    <div class="author w-full h-auto flex flex-col justify-center items-center gap-4 mt-4">
+                        
+                        <div class="author-info w-full h-auto flex flex-col justify-center items-center gap-2 text-center">
+                            <h4 class="text-2xl text-blue-800">John Doe</h4>
+                            <p class="text-sm text-slate-600">Software Engineer</p>                        
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Footer Section -->
+         <section class="footer-section w-full h-auto">
+            <div class="footer-container w-full h-auto flex flex-col justify-start items-start px-4 py-8 md:px-8 lg:px-[100px] xl:px-[150px] gap-8 bg-slate-900 text-slate-300">
+                <!-- Footer Section will go here -->
+                 <div class="footer-top w-full h-auto flex flex-col justify-start items-start gap-8">
+
+                    <div class="logo w-full h-auto flex flex-col justify-start items-start gap-2">
+                        <!-- <img src="./images/logo.png" alt="logo" class="w-10 h-10"> -->
+                        <h3 class="text-2xl font-bold text-slate-200">Glint-tech <span class="text-blue-800">Academy </span></h3>
+                    </div>        
+
+                    <div class="links w-full h-auto flex flex-col justify-start items-start gap-8 md:flex-row md:justify-start md:items-start md:gap-32">
+                        <div class="nav-link w-fit h-auto flex flex-col justify-start items-start gap-2">
+                            <h2 class="text-2xl font-bold">Navigation</h2>
+                            <a href="index.html" class="hover:text-white">Home</a>
+                            <a href="courses.html" class="hover:text-white">Courses</a>
+                            <a href="blog.html" class="hover:text-white">Blog</a>
+                            <a href="contact.html" class="hover:text-white">Contact</a>
+                        </div>
+
+                        <div class="courses-category-links">
+                            <h2 class="text-2xl font-bold">Course Categories</h2>
+                            <div class="cat-links flex flex-col justify-start items-start gap-2 mt-2">
+                                <a href="course.html" class="hover:text-white">Web Development</a>
+                                <a href="course.html" class="hover:text-white">Design</a>            
+                                <a href="course.html" class="hover:text-white">Data Science</a>            
+                                <a href="course.html" class="hover:text-white">Mobile Development</a>            
+                                <a href="course.html" class="hover:text-white">Business</a>            
+                                <a href="course.html" class="hover:text-white">Marketing</a>
+                            </div>                
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="footer-bottom w-full h-auto flex flex-col justify-start items-start gap-8">
+                    <div class="socials w-full h-auto flex flex-col justify-start items-start gap-4">
+                        <h3 class="text-2xl font-bold text-slate-200">Follow Us</h3>
+                        <div class="social-icons w-full h-auto flex flex-row justify-start items-center gap-4">
+                            <a href="https://www.facebook.com/" target="_blank" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="copyright w-full h-auto flex flex-col justify-start items-start gap-4">
+                        <p class="text-slate-400">&copy; 2024 CodeLearn. All rights reserved.</p>
+                    </div>
+                 </div>
+            </div>  
+         </section>
     </div>
 
 
+    <script type="module" src="./js/fetchdata.js"></script>
+    <script src="./js/menudisplay.js"></script>
 </body>
 </html>
