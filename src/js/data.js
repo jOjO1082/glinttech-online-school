@@ -4,6 +4,7 @@ export const courseDetails = [
         id: 1,
         image: 'images/development.jpg',
         category: 'Web Development',
+        categoryMain: 'Development',
         title: 'Become a Certified Web Designer',
         duration: '2h 30m',
         levels: 'Beginner',
@@ -37,6 +38,7 @@ export const courseDetails = [
         id: 2,
         image: 'images/development.jpg',
         category: 'Graphic Design',
+        categoryMain: 'Design',
         title: 'Mastering Adobe Illustrator',
         duration: '2h 30m',
         lessons: '12 Lessons',
@@ -67,6 +69,7 @@ export const courseDetails = [
         id: 3,
         image: 'images/development.jpg',
         category: 'Digital Marketing',
+        categoryMain: 'Marketing',
         title: 'Digital Marketing Fundamentals',
         duration: '2h 30m',
         lessons: '12 Lessons',
@@ -98,6 +101,7 @@ export const courseDetails = [
         id: 4,
         image: 'images/development.jpg',
         category: 'Photography',
+        categoryMain: 'Photography',
         title: 'Photography Basics for Beginners',
         duration: '2h 30m',
         lessons: '12 Lessons',
@@ -165,3 +169,38 @@ export const categoryDetails = [
         numberOfCourses: 8,
     }
 ];
+
+
+// All Turutor Details Data
+export const tutorDetails = [
+    {
+        id: 1,  
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        name: 'John Doe',
+        rating: 4.5,
+        courseCount: 12,
+        title: 'Senior Web Developer'
+    },
+
+    {
+        id: 2,  
+        image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        name: 'Jane Smith',
+        rating: 4.8,
+        courseCount: 8,    
+        title: 'Digital Marketing Expert'            
+    },
+
+    {
+        id: 3,  
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        name: 'John Doe',
+        rating: 4.5,
+        courseCount: 12,   
+        title: 'Senior Web Developer'             
+    },
+
+    
+
+]
+    

@@ -124,10 +124,10 @@
                 <h2 class="font-bold text-3xl text-slate-700 text-center w-full md:text-start md:w-fit">Our <span class="text-blue-800">Featured</span> Courses</h2>
 
                 <div class="categories-container w-full h-auto flex flex-row justify-center items-center gap-4 overflow-x-auto md:w-fit">
-                    <div class="all-courses w-fit font-semibold hover:text-blue-800 cursor-pointer text-blue-800" id="all-courses">All Courses</div>
-                    <div class="design-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="design">Design</div>
-                    <div class="marketing-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="marketing">Marketing</div>
-                    <div class="development-courses w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="development">Development</div>
+                    <div class="filter-button w-fit font-semibold hover:text-blue-800 cursor-pointer text-blue-800" id="all-courses" data-category="All">All Courses</div>
+                    <div class="filter-button w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="design" data-category="Design">Design</div>
+                    <div class="filter-button w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="marketing" data-category="Marketing">Marketing</div>
+                    <div class="filter-button w-fit font-semibold text-slate-700 hover:text-blue-800 cursor-pointer" id="development" data-category="Development">Development</div>
                 </div>
             </div>
 
@@ -203,39 +203,39 @@
             <div class="stats-container w-full h-auto flex flex-col justify-center items-stretch gap-8 md:grid-cols-2 md:grid lg:grid-cols-3 md:gap-3 lg:gap-4">
                 <!-- Stats will go here -->
 
-                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-[#516DDB] bg-opacity-10 rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
                     <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
                         <h2 class="stat-number font-bold text-4xl text-slate-700">50+</h2>
                         <p class="stat-description text-lg text-slate-600">Courses Available</p>
                     </div>
 
                     <div class="stat-illustration w-[200px] h-auto overflow-hidden">
-                        <img src="./images/card-illustration(2).jpg" alt="courses icon" class="w-full h-auto">
+                        <img src="./images/school_illustration (1).png" alt="courses icon" class="w-full h-auto">
                     </div>
                 </div>
 
 
-                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-[#FFC562] bg-opacity-10 rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
                     <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
                         <h2 class="stat-number font-bold text-4xl text-slate-700">15k</h2>
                         <p class="stat-description text-lg text-slate-600">Active Learners</p>
                     </div>
 
                     <div class="stat-illustration w-[200px] h-auto overflow-hidden">
-                        <img src="./images/card-illustration(1).jpg" alt="courses icon" class="w-full h-auto">
+                        <img src="./images/school_illustration (3).png" alt="courses icon" class="w-full h-auto">
                     </div>
                 </div>
 
 
 
-                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-white rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
+                <div class="stats-card w-full h-auto flex flex-col justify-start items-center gap-4 bg-[#97CC64] bg-opacity-10 rounded-md px-4 py-6 cursor-pointer overflow-hidden transition-all delay-150 duration-200 ease-in md:px-6 lg:px-8">
                     <div class="stats-text text-center flex flex-col justify-center items-center gap-2">
                         <h2 class="stat-number font-bold text-4xl text-slate-700">20+</h2>
                         <p class="stat-description text-lg text-slate-600">Experienced Instructors </p>
                     </div>
 
                     <div class="stat-illustration w-[200px] h-auto overflow-hidden">
-                        <img src="./images/card-illustration(3).jpg" alt="courses icon" class="w-full h-auto">
+                        <img src="./images/school_illustration (2).png" alt="courses icon" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -257,13 +257,13 @@
 
 
         <!-- Instructors Section -->
-        <section class="instructors-section w-full h-auto flex flex-col justify-start items-start px-4 py-8 md:px-8 lg:px-[100px] xl:px-[150px] gap-8">
+        <section class="instructors-section w-full h-auto flex flex-col justify-start items-start px-4 py-32 md:px-8 lg:px-[100px] xl:px-[150px] gap-8 "> 
 
             <!-- Instructors Section will go here -->
              <div class="instructors-cards-container w-full h-auto flex flex-col justify-start items-center gap-8 md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-6 lg:gap-8">
 
                 <!-- Instructor Cards will go here -->
-                 <div class="instructor-card w-full h-auto flex flex-col justify-start items-start gap-4 bg-white rounded-md px-4 py-8 cursor-pointer transition-all delay-150 duration-200 ease-in border border-slate-200">
+                 <!-- <div class="instructor-card w-full h-auto flex flex-col justify-start items-start gap-4 bg-white rounded-md px-4 py-8 cursor-pointer transition-all delay-150 duration-200 ease-in border border-slate-200">
                     <div class="name-and-image w-full h-auto flex flex-col justify-start items-center gap-4">
                         <div class="image w-[150px] h-[150px] md:w-[150px] md:h-[150px] flex flex-col justify-center items-center gap-4 rounded-full mx-auto overflow-hidden">
                              <img src="./images/portrait.jpg" alt="instructor image" class="w-full h-auto object-contain object-center">
@@ -281,7 +281,7 @@
                     </div>
                          <p class="students-count text-slate-500">1,200 Students</p>
                     </div>
-                </div>
+                </div> -->
              </div>
         </section>
 
