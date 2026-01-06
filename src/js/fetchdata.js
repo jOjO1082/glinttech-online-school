@@ -10,6 +10,8 @@ function renderFilteredCourses(courseDetails) {
 
     const featuredCoursesContainer = document.querySelector('.courses-cards-container');
 
+    if (!featuredCoursesContainer) return;
+
     featuredCoursesContainer.innerHTML = "";
 
     courseDetails.forEach(course => {
@@ -51,7 +53,7 @@ function renderFilteredCourses(courseDetails) {
                         <div class="price w-fit h-auto text-blue-800 font-semibold text-2xl">&#8358;${course.price}</div>
                     </div>
 
-                    <a href="course.html" class="button w-full h-auto flex flex-row justify-center items-center gap-2 bg-slate-100 text-blue-800 font-semibold py-2 rounded-md hover:bg-blue-800 hover:text-slate-100 transition-all delay-75 duration-100 ease-in">Enroll</a>
+                    <a href=coursedetails.html?id=${course.id} class="button w-full h-auto flex flex-row justify-center items-center gap-2 bg-slate-100 text-blue-800 font-semibold py-2 rounded-md hover:bg-blue-800 hover:text-slate-100 transition-all delay-75 duration-100 ease-in">Enroll</a>
                 </div>      
         
         `;
@@ -65,7 +67,8 @@ renderFilteredCourses(courseDetails);
 // Render category cards on the homepage
 const categoryCardsContainer = document.querySelector('.categories-card-container');
 
-categoryDetails.forEach(category => {
+if (categoryCardsContainer) {
+    categoryDetails.forEach(category => {
 
     categoryCardsContainer.innerHTML += `
     
@@ -87,12 +90,13 @@ categoryDetails.forEach(category => {
 
 });
 
-
+}
 
 // Render tutor cards on the homepage
 const tutorCardsContainer = document.querySelector('.instructors-cards-container');
 
-tutorDetails.forEach(tutor => {
+if (tutorCardsContainer) {
+    tutorDetails.forEach(tutor => {
 
     tutorCardsContainer.innerHTML += `
     
@@ -121,7 +125,7 @@ tutorDetails.forEach(tutor => {
 
 });
 
-
+}
 
 // Filter course by category function
 const filterButtons = document.querySelectorAll('.filter-button');

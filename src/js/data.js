@@ -9,11 +9,15 @@ export const courseDetails = [
         duration: '2h 30m',
         levels: 'Beginner',
         lessons: '12 Lessons',
+        numberOfStudents: '123',
+        numberOfDocuments: '32',
         price: '10,000',
+        language: 'English',
         featured: false,
         heroDescription: 'Learn the fundamentals of web design and development with this comprehensive course.',
-        tutorImage: 'src/images/tutor1.jpg',
-        tutorName: 'Jane Doe',
+        tutorImage: 'images/portrait.jpg',
+        tutorName: 'Jonathan Joseph',
+        tutorBio:  'My name is Jonathan',
         courseInformation: {
             infoDescription: 'This course covers HTML, CSS, JavaScript, and responsive design principles to help you create stunning websites.',
             whatYouWillLearn: [
@@ -29,7 +33,10 @@ export const courseDetails = [
                 'Basic knowledge of responsive design'
             ],
             requirementsDescription: 'No prior experience is required, but a basic understanding of web development concepts will be helpful.',
-        }
+            whatYouWillLearnDescription: 'It will site here'
+        },
+
+        link : 'https://houseplug.netlify.app/'   
 
 
     },

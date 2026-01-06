@@ -9,6 +9,10 @@
 
     <!-- Font Awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+     <!-- Script -->
+    <script defer type="module" src="./js/fetchdata.js"></script>
+    <script defer src="./js/menudisplay.js"></script>
 </head>
 <body>
     
@@ -66,7 +70,7 @@
 
 
             <!-- Mobile Menu -->
-             <div class="mobile-menu-container md:hidden flex flex-col justify-start items-start bg-slate-50 rounded-md absolute top-1 left-0 w-full h-auto shadow-lg transition-all px-4 py-8 gap-8 -translate-y-[200%] opacity-0 delay-75 duration-200 ease-in">
+             <div class="mobile-menu-container md:hidden flex flex-col justify-start items-start bg-slate-50 rounded-md absolute top-1 left-0 w-full h-auto shadow-lg transition-transform px-4 py-8 gap-8 -translate-y-[200%] opacity-0 delay-75 duration-200 ease-out">
                 <div class="menu-head w-full h-auto flex flex-row justify-between items-center">
                     <a href="index.html">
                         <div class="logo-container">
@@ -384,7 +388,6 @@
     </div>
 
 
-    <script type="module" src="./js/fetchdata.js"></script>
-    <script src="./js/menudisplay.js"></script>
+
 </body>
 </html>
