@@ -49,7 +49,7 @@
         </div>
 
         <!-- Navigation Bar -->
-        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[100px] xl:px-[150px] relative">
+        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[100px] xl:px-[150px] relative z-20 shadow-md">
             <a href="index.html" class="hover:animate-pulse w-fit h-auto">
                 <div class="logo-container">
                     <!-- <img src="" alt="glintech-logo"> -->
@@ -98,7 +98,7 @@
         </nav>
 
         <!-- Course hero Details Section -->
-         <section class="hero-details-section bg-slate-800 px-4 py-16 w-full h-auto md:px-8 lg:px-[100px] xl:px-[150px] relative">
+         <section class="hero-details-section bg-slate-800 px-4 py-16 w-full h-auto md:px-8 lg:px-[100px] xl:px-[150px] relative -z-10">
             <div class="course-details-contianer w-full h-auto flex flex-col justify-start items-start gap-6 lg:w-[65%] xl:w-[70%]">
 
                 <!-- Course Details will go here -->
@@ -150,11 +150,9 @@
             <div class="descriptions w-full h-auto py-6 flex flex-col justify-start items-start gap-4 text-slate-700">
                 <p id="what-you-will-learn-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime at enim distinctio officia beatae dolorum, perspiciatis laudantium deserunt quae. Excepturi aliquam neque pariatur rem accusantium sunt numquam libero possimus consectetur inventore debitis commodi, placeat rerum maiores nemo quos. Itaque, aperiam!</p>
 
-                <ul class="learning-points w-full h-auto grid grid-cols-1 justify-start items-start gap-2 md:grid-cols-2">
-                    <li class=""><i class="fa-regular fa-circle-check text-green-600"></i> Understanding design principles and elements.</li>
-                    <li class=""><i class="fa-regular fa-circle-check text-green-600"></i> Proficiency in graphic design software (e.g., Adobe Photoshop, Illustrator).</li>
-                    <li class=""><i class="fa-regular fa-circle-check text-green-600"></i> Creating logos, brochures, posters, and other marketing materials.</li>
-                    <li class=""><i class="fa-regular fa-circle-check text-green-600"></i> Developing a strong portfolio of design work.</li>
+                <ul class="learning-points w-full h-auto grid grid-cols-1 justify-start items-start gap-2 md:grid-cols-2" id="learning-points">
+                    <!-- <li class=""><i class="fa-regular fa-circle-check text-green-600"></i> Understanding design principles and elements.</li> -->
+                    
                 </ul>
             </div>
            </section>
@@ -167,7 +165,7 @@
 
                 <div class="requirements-descriptions flex flex-col justify-start items-start gap-4 w-full h-auto py-6 text-slate-700">
                     <p id="requirements-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime at enim distinctio officia beatae dolorum, perspiciatis laudantium deserunt quae. </p>
-                    <ul class="requirements-list w-full h-auto grid grid-cols-1 justify-start items-start gap-2 md:grid-cols-2 ">
+                    <ul class="requirements-list w-full h-auto grid grid-cols-1 justify-start items-start gap-2 md:grid-cols-2 " id="requirement-list">
                         <li><i class="fa-regular fa-circle-check text-green-500"></i> A computer with internet access.</li>
                         <li><i class="fa-regular fa-circle-check text-green-500"></i> Basic understanding of computer software.</li>
                         <li><i class="fa-regular fa-circle-check text-green-500"></i> Willingness to learn and practice design skills.</li>
@@ -211,7 +209,9 @@
              </section>
 
              <!-- Payment Section -->
-              <section class="payment-card-section w-full h-auto px-4 py-2 flex flex-col justify-start items-start gap-8 lg:absolute lg:top-60 lg:right-24 lg:w-[300px] lg:px-0 lg:py-0 lg:self-end xl:right-36">
+              <section class="payment-card-section w-full h-auto px-4 py-2 flex flex-col justify-start items-start gap-8 lg:absolute lg:top-60 lg:right-24 lg:w-[300px] lg:px-0 lg:py-0 lg:self-end xl:right-36 z.-10">
+
+                <!-- Payment Card -->
                 <div class="payment-card w-full h-auto bg-slate-50 border rounded-lg px-4 py-4 flex flex-col justify-start items-start gap-4">
                     <div class="course-image w-full h-48 overflow-hidden rounded-t-md">
                         <img src="./images/development.jpg" alt="course-image" class="w-full h-48 object-cover rounded-t-md" id="course-image">
@@ -272,19 +272,22 @@
                      </div>
                 </div>
 
+                <!-- Related Courses -->
                 <div class="related-courses-card w-full h-auto bg-slate-50 border rounded-lg px-4 py-4 flex flex-col justify-start items-start gap-4">
                     <!-- Related Courses Card will go here -->
                     <h3 class="text-2xl text-blue-800">Related Courses</h3>
 
-                    <div class="related-courses-cards-container w-full h-auto flex flex-row justify-start items-center gap-4 overflow-x-auto">
-                        <div class="course-image w-[100px] h-[100px] border rounded-md overflow-hidden ">
-                            <img src="./images/illustration.jpg" alt="course-image" class="w-full h-32 object-cover rounded-t-md">
-                        </div>
+                    <div class="related-courses-cards-container w-full h-auto flex flex-col justify-start items-start gap-4 overflow-x-auto lg:overflow-x-hidden">
+                        <!-- <div class="related-course-card w-full h-auto flex flex-row justify-start items-center gap-2">
+                            <div class="course-image w-[100px] h-[100px] border rounded-md overflow-hidden ">
+                                <img src="./images/illustration.jpg" alt="course-image" class="w-full h-32 object-cover rounded-t-md">
+                            </div>
 
-                        <div class="course-title-and-price px-4 py-2">
-                            <h4 class="text-slate-700 font-semibold">Web Development Bootcamp</h4>
-                            <span class="text-blue-800 font-bold">$89.99</span>
-                        </div>
+                            <div class="course-title-and-price px-4 py-2">
+                                <h4 class="text-slate-700 font-semibold">Web Development Bootcamp</h4>
+                                <span class="text-blue-800 font-bold">$89.99</span>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
               </section>

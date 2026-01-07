@@ -13,6 +13,8 @@
      <!-- Script -->
     <script defer type="module" src="./js/fetchdata.js"></script>
     <script defer src="./js/menudisplay.js"></script>
+    <script defer type="module" src="./js/allCourses.js"></script>
+
 </head>
 <body>
     
@@ -47,7 +49,7 @@
         </div>
 
         <!-- Navigation Bar -->
-        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[100px] xl:px-[150px] relative">
+        <nav class="navigation-container w-full h-auto flex flex-row justify-between items-center px-4 py-6 bg-slate-50 md:px-8 lg:px-[100px] xl:px-[150px] relative z-20">
             <a href="index.html" class="hover:animate-pulse w-fit h-auto">
                 <div class="logo-container">
                     <!-- <img src="" alt="glintech-logo"> -->
@@ -95,29 +97,125 @@
              </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="hero-section w-full h-auto flex flex-col justify-start items-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:px-[100px] xl:px-[150px]">
-            <div class="hero-top w-full h-auto flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:items-center">
+        <!-- Hero section -->
+        <section class="courses-hero-section bg-blue-800 py-8 px-4 text-slate-50 md:px-8 md:py-16 lg:px-[100px] xl:px-[150px]">
+            <div class="content w-full h-auto flex flex-col justify-start items-start gap-2">
+                <h2 class="w-fit font-bold text-3xl md:text-4xl" >Courses</h2>
+                <div class="nav w-fit h-auto flex flex-row justify-start items-center gap-2">
+                    <a href="home" class="hover:underline">Home</a>
+                    <span>/</span>
+                    <a href="courses" class="hover:underline">Courses</a>
+                </div>
+            </div>
+        </section>
 
-                <div class="group-and-button w-full h-auto flex flex-col justify-center items-center gap-8 md:w-[60%] md:justify-start md:items-start">
-                        <div class="hero-text-group w-fit h-auto flex flex-col justify-start items-start gap-4">
-                        <h1 class=" font-bold text-3xl text-center w-[90%] md:text-5xl md:text-start md:w-[90%] lg:text-6xl">Learn In-Demand Skills with Short, <span class="text-blue-800">Practical Online Courses</span></h1>
-                        <p class="font-normal text-slate-700 text-center  md:text-start md:w-[80%]">Build real-world skills faster with expert-led micro-courses designed for busy learners.
-                        No fluff. Just focused lessons you can apply immediately.</p>
+        <section class="all-courses-section w-full h-auto py-8 px-4 md:px-8 md:py-16 lg:px-[100px] xl:px-[150px]">
+
+            <div class="course-content w-full h-auto flex flex-col justify-start items-start gap-12">
+
+                <h2 class="text-2xl font-bold text-blue-800 w-full text-center md:text-3xl lg:text-4xl">Our Courses</h2>
+
+                <div class="head w-full h-auto flex flex-col justify-start items-start gap-4 lg:flex-row lg:justify-between lg:items-end">
+
+                    <div class="actions-links w-full h-auto flex flex-row justify-start items-center gap-4 flex-wrap lg:w-[60%]">
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg bg-blue-800 text-slate-50 font-semibold hover:bg-blue-800 transition-All delay-75 ease-in duration-200">All</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Web Development</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Marketing</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">UI/UX Design</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Graphics Design</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Finance</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Business</button>
+                        <button class="w-fit h-auto px-4 py-1 border border-slate-200 rounded-lg hover:bg-blue-800 hover:text-slate-50 transition-All delay-75 ease-in duration-200">Healthcare</button>
                     </div>
 
-                    <a href="courses.html" class="primary-button py-2 px-4 bg-blue-800 rounded-md text-white hover:bg-blue-950 hover:px-5 transition-all delay-75 duration-100 ease-in w-full text-center md:w-fit">Explore our courses</a>
-                </div>
-                
-
-                <div class="hero-image w-[300px] h-auto animate-pulse md:w-[40%]">
-                    <img src="./images/illustration.jpg" alt="learning illustration" class="w-full h-auto object-cover">
+                    <div class="search-box w-full h-auto flex flex-row justify-start items-center gap-2 md:w-[70%] lg:w-[40%]">
+                        <input type="search" name="search" id="search-box" placeholder="Search course" class="w-[70%] h-auto border px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-800">
+                        <button type="button" class="w-[30%] bg-blue-800 px-2 py-2 rounded-lg font-semibold text-sky-50 hover:bg-blue-950 transition-All delay-75 ease-in duration-100">Search</button>
+                    </div>
                 </div>
 
-                
+                <!-- Filter reveal buttons -->
+                <div class="filter-buttons w-fit h-auto flex flex-row justify-start items-start gap-4">
+                    <button class="w-fit h-auto bg-blue-800 px-8 py-1 rounded-lg text-slate-50 font-semibold hidden">Reset</button>
+
+                    <button class="w-fit h-auto bg-slate-50 border  rounded-lg px-5 py-1 flex flex-row justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg> Filter</button>
+                </div>
+
+
+                <!-- Courses will go here -->
+                <div class="courses-main-container w-full h-auto flex flex-col justify-start items-start gap-2 lg:flex-row md:gap-6 lg:gap-4">
+
+                    
+                    
+
+
+                    <!-- Filter -->
+                    <aside class="filter-box-container w-full h-auto flex flex-row justify-start items-start gap-4 lg:w-[20%] md:hidden lg:flex lg:flex-col ">
+
+                    
+
+                    <!-- Filter boxes -->
+                    <div class="filtering-boxes w-full h-auto flex-row justify-between items-center gap-2 hidden md:flex md:flex-row md:justify-start md:items-start md:gap-8 lg:flex-col">
+
+
+                        <!-- Filter by level -->
+                    <div class="filter-box w-[48%] h-auto flex flex-col justify-start items-start gap-2 px-4 py-4 rounded-lg border border-slate-200 bg-slate-50 md:w-[48%] lg:w-full">
+                        
+                        <h2 class="text-md font-semibold text-blue-800">Filter by Level</h2>  
+
+                        <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="price" id="price">
+                                <label for="price">Beginner</label>
+                            </div>
+
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="duration" id="duration">
+                                <label for="duration">Intermediate</label>
+                            </div>
+
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="level" id="level">
+                                <label for="level">Advance</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    <!-- Filter by instructor -->
+                    <div class="filter-box w-[48%] h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 border border-slate-200 px-4 py-4 rounded-lg md:w-[48%] lg:w-full">
+                        <h2 class="font-semibold text-md text-blue-800">Filter by Instructor</h2>    
+                        <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="price" id="price">
+                                <label for="price">Otor Peter</label>
+                            </div>
+
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="duration" id="duration">
+                                <label for="duration">Jonathan Joseph</label>
+                            </div>
+
+                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                <input type="checkbox" name="level" id="level">
+                                <label for="level">Michael Ogbu</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                    </aside>
+
+                    <!-- Courses -->
+                    <div class="all-courses w-full h-auto flex flex-col justify-start items-stretch gap-4 md:grid md:grid-cols-2 md:w-full lg:grid-cols-3 xl:grid-cols-3" id="all-courses-container">
+                        <!-- Courses will go here -->
+                    </div>
+                    </div>
+
+                    
+                </div>
             </div>
-
-            
         </section>
 
         

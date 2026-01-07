@@ -8,7 +8,7 @@ export const courseDetails = [
         title: 'Become a Certified Web Designer',
         duration: '2h 30m',
         levels: 'Beginner',
-        lessons: '12 Lessons',
+        lessons: '12',
         numberOfStudents: '123',
         numberOfDocuments: '32',
         price: '10,000',
@@ -48,7 +48,7 @@ export const courseDetails = [
         categoryMain: 'Design',
         title: 'Mastering Adobe Illustrator',
         duration: '2h 30m',
-        lessons: '12 Lessons',
+        lessons: '12',
         levels: 'Beginner',
         price: '5,000',
         featured: false,
@@ -79,7 +79,7 @@ export const courseDetails = [
         categoryMain: 'Marketing',
         title: 'Digital Marketing Fundamentals',
         duration: '2h 30m',
-        lessons: '12 Lessons',
+        lessons: '12',
         levels: 'Beginner',
         price: '5,000',
         featured: false,
@@ -111,7 +111,7 @@ export const courseDetails = [
         categoryMain: 'Photography',
         title: 'Photography Basics for Beginners',
         duration: '2h 30m',
-        lessons: '12 Lessons',
+        lessons: '12',
         levels: 'Beginner',
         price: '10,000',
         featured: false,
@@ -210,4 +210,11 @@ export const tutorDetails = [
     
 
 ]
+   
+
+
+// All blog data
+
+export const blogDetails = [
     
+]

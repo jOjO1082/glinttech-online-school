@@ -6,7 +6,9 @@ import { tutorDetails } from './data.js';
 
 // Render featured courses on the homepage
 
-function renderFilteredCourses(courseDetails) {
+
+
+ export function renderFilteredCourses(courseDetails) {
 
     const featuredCoursesContainer = document.querySelector('.courses-cards-container');
 
@@ -20,7 +22,7 @@ function renderFilteredCourses(courseDetails) {
         
         <div class="course-card w-full h-auto flex flex-col justify-start items-start gap-6 bg-white rounded-md px-4 py-3 cursor-pointer transition-all delay-150 duration-200 ease-in hover:shadow-lg">
 
-                    <div class="course-image w-full h-auto overflow-hidden rounded-md">
+                    <div class="course-image w-full h-[200px] overflow-hidden rounded-md">
                         <img src=${course.image} alt="course image" class="w-full h-auto rounded-md object-cover">
                     </div>
 
