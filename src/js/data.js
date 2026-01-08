@@ -54,7 +54,7 @@ export const courseDetails = [
         featured: false,
         heroDescription: 'Learn the fundamentals of Adobe Illustrator with this comprehensive course.',
         tutorImage: 'src/images/tutor2.jpg',
-        tutorName: 'John Doe',
+        tutorName: 'Otor Peter',
         courseInformation: {
             infoDescription: 'This course covers the basics of Adobe Illustrator, including creating vector graphics, text, and shapes.',
             whatYouWillLearn: [
@@ -85,7 +85,7 @@ export const courseDetails = [
         featured: false,
         heroDescription: 'Learn the fundamentals of digital marketing with this comprehensive course.',
         tutorImage: 'src/images/tutor3.jpg',
-        tutorName: 'Jane Doe',
+        tutorName: 'Michael Ogbu',
         courseInformation: {
             infoDescription: 'This course covers SEO, social media marketing, email marketing, and content marketing strategies to help you grow your online presence.',
             whatYouWillLearn: [
@@ -117,7 +117,7 @@ export const courseDetails = [
         featured: false,
         heroDescription: 'Learn the basics of photography with this comprehensive course.',
         tutorImage: 'src/images/tutor4.jpg',
-        tutorName: 'John Doe',
+        tutorName: 'Jonathan Joseph',
         courseInformation: {
             infoDescription: 'This course covers the basics of photography, including camera settings, composition, and lighting techniques.',
             whatYouWillLearn: [ 
@@ -147,7 +147,7 @@ export const categoryDetails = [
     {
         id: 1,
         icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-source-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5" /><path d="M6 5l-2 2l2 2" /><path d="M10 9l2 -2l-2 -2" /></svg>',
-        category: 'Development',
+        category: 'Web Development',
         title: 'Web Development',
         numberOfCourses: 18,
     },
@@ -155,7 +155,7 @@ export const categoryDetails = [
     {
         id: 2,
         icon: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-icons text-blue-800"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 6.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0" /><path d="M2.5 21h8l-4 -7l-4 7" /><path d="M14 3l7 7" /><path d="M14 10l7 -7" /><path d="M14 14h7v7h-7l0 -7" /></svg>',
-        category: 'Design',
+        category: 'Graphic Design',
         title: 'Graphic Design',
         numberOfCourses: 12,
     },

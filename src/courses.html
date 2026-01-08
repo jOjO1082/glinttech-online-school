@@ -109,6 +109,7 @@
             </div>
         </section>
 
+        <!-- All courses section -->
         <section class="all-courses-section w-full h-auto py-8 px-4 md:px-8 md:py-16 lg:px-[100px] xl:px-[150px]">
 
             <div class="course-content w-full h-auto flex flex-col justify-start items-start gap-12">
@@ -130,91 +131,88 @@
 
                     <div class="search-box w-full h-auto flex flex-row justify-start items-center gap-2 md:w-[70%] lg:w-[40%]">
                         <input type="search" name="search" id="search-box" placeholder="Search course" class="w-[70%] h-auto border px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-800">
-                        <button type="button" class="w-[30%] bg-blue-800 px-2 py-2 rounded-lg font-semibold text-sky-50 hover:bg-blue-950 transition-All delay-75 ease-in duration-100">Search</button>
+                        <button type="button" class="w-[30%] bg-blue-800 px-2 py-2 rounded-lg font-semibold text-sky-50 hover:bg-blue-950 transition-All delay-75 ease-in duration-100" id="search-button">Search</button>
                     </div>
                 </div>
 
                 <!-- Filter reveal buttons -->
                 <div class="filter-buttons w-fit h-auto flex flex-row justify-start items-start gap-4">
-                    <button class="w-fit h-auto bg-blue-800 px-8 py-1 rounded-lg text-slate-50 font-semibold hidden">Reset</button>
+                    <button class="w-fit h-auto bg-blue-800 px-8 py-1 rounded-lg text-slate-50 font-semibold hidden lg:flex" id="reset-button">Reset</button>
 
-                    <button class="w-fit h-auto bg-slate-50 border  rounded-lg px-5 py-1 flex flex-row justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg> Filter</button>
+                    <button class="w-fit h-auto bg-slate-50 border  rounded-lg px-5 py-1 flex flex-row justify-center items-center" id="filter-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg> Filter</button>
                 </div>
 
 
                 <!-- Courses will go here -->
-                <div class="courses-main-container w-full h-auto flex flex-col justify-start items-start gap-2 lg:flex-row md:gap-6 lg:gap-4">
+                <div class="courses-main-container w-full h-auto flex flex-col justify-start items-start gap-4 lg:flex-row md:gap-6 lg:gap-4">
 
                     
                     
 
 
-                    <!-- Filter -->
-                    <aside class="filter-box-container w-full h-auto flex flex-row justify-start items-start gap-4 lg:w-[20%] md:hidden lg:flex lg:flex-col ">
-
-                    
+                <!-- Filter -->
+                <aside class="filter-box-container w-full h-auto md:w-full lg:w-[20%]">
 
                     <!-- Filter boxes -->
-                    <div class="filtering-boxes w-full h-auto flex-row justify-between items-center gap-2 hidden md:flex md:flex-row md:justify-start md:items-start md:gap-8 lg:flex-col">
+                    <div class="filtering-boxes w-full h-auto hidden flex-row justify-between items-center gap-1  md:hidden md:flex-row md:justify-start md:items-start md:gap-8 lg:flex lg:flex-col transition-all duration-300 ease-in-out">
 
 
                         <!-- Filter by level -->
-                    <div class="filter-box w-[48%] h-auto flex flex-col justify-start items-start gap-2 px-4 py-4 rounded-lg border border-slate-200 bg-slate-50 md:w-[48%] lg:w-full">
-                        
-                        <h2 class="text-md font-semibold text-blue-800">Filter by Level</h2>  
+                        <div class="filter-box w-[49%] h-auto flex flex-col justify-start items-start gap-2 px-4 py-4 rounded-lg border border-slate-200 bg-slate-50 md:w-full lg:w-full">
+                            
+                            <h2 class="text-md font-semibold text-blue-800">Filter by Level</h2>  
 
-                        <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="price" id="price">
-                                <label for="price">Beginner</label>
+                            <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="beginner" id="beginner">
+                                    <label for="beginner" class="text-sm">Beginner</label>
+                                </div>
+
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="intermediate" id="intermediate">
+                                    <label for="intermediate" class="text-sm">Intermediate</label>
+                                </div>
+
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="advance" id="advance">
+                                    <label for="advance" class="text-sm">Advance</label>
+                                </div>
+
                             </div>
-
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="duration" id="duration">
-                                <label for="duration">Intermediate</label>
-                            </div>
-
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="level" id="level">
-                                <label for="level">Advance</label>
-                            </div>
-
                         </div>
-                    </div>
                     
 
-                    <!-- Filter by instructor -->
-                    <div class="filter-box w-[48%] h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 border border-slate-200 px-4 py-4 rounded-lg md:w-[48%] lg:w-full">
-                        <h2 class="font-semibold text-md text-blue-800">Filter by Instructor</h2>    
-                        <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="price" id="price">
-                                <label for="price">Otor Peter</label>
-                            </div>
+                        <!-- Filter by instructor -->
+                        <div class="filter-box w-[49%] h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 border border-slate-200 px-4 py-4 rounded-lg md:w-full lg:w-full">
+                            <h2 class="font-semibold text-md text-blue-800">Filter by Instructor</h2>    
+                            <div class="filter-options w-full h-auto flex flex-col justify-start items-start gap-1">
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="otor" id="otor">
+                                    <label for="otor" class="text-sm">Otor Peter</label>
+                                </div>
 
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="duration" id="duration">
-                                <label for="duration">Jonathan Joseph</label>
-                            </div>
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="jonathan" id="jonathan">
+                                    <label for="jonathan" class="text-sm">Jonathan Joseph</label>
+                                </div>
 
-                            <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
-                                <input type="checkbox" name="level" id="level">
-                                <label for="level">Michael Ogbu</label>
-                            </div>
+                                <div class="filter-option w-full h-auto flex flex-row justify-start items-center gap-2">
+                                    <input type="checkbox" name="michael" id="michael">
+                                    <label for="michael" class="text-sm">Michael Ogbu</label>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    </aside>
+                </aside>
 
                     <!-- Courses -->
-                    <div class="all-courses w-full h-auto flex flex-col justify-start items-stretch gap-4 md:grid md:grid-cols-2 md:w-full lg:grid-cols-3 xl:grid-cols-3" id="all-courses-container">
+                    <div class="all-courses w-full h-auto flex flex-col justify-start items-stretch gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4" id="all-courses-container">
                         <!-- Courses will go here -->
                     </div>
                     </div>
 
                     
-                </div>
             </div>
         </section>
 
