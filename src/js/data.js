@@ -218,3 +218,34 @@ export const tutorDetails = [
 export const blogDetails = [
     
 ]
+
+
+// All FAQ data
+
+export const faqDetails = [
+    {
+        id: 1,
+        question: 'What services do you offer?',
+        answer: 'We specialize in web design, UI/UX design, front-end development, and digital product design. This includes landing pages, portfolio websites, course platforms, dashboards, and scalable web solutions.'
+    },
+
+    {
+        id: 2,
+        question: 'Who do you work with?',
+        answer: 'We work with individuals, startups, businesses, institutions, and creators. Whether you’re just starting out or looking to improve an existing product, we tailor our approach to your goals.'
+    },
+
+    {
+        id: 3,
+        question: 'Do you offer discounts for students and professionals?',
+        answer: 'Yes, we offer discounts to students and professionals. Please contact us for more information.'
+    },
+
+    {
+        id: 4,
+        question: 'How long does a typical project take?',
+        answer: 'Project timelines vary based on scope and complexity. Small projects may take 1–2 weeks, while larger or more custom solutions can take several weeks. Clear timelines are agreed upon before work begins.'
+    },
+
+
+]
