@@ -249,16 +249,18 @@ export const blogPosts = [
     {
         id: 1,
         title: 'Web Design Basics',
+        subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
         author: 'John Doe',
         authorImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',  
-        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        date: '2023-08-01',
-        category: 'Design',
+        authorBio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
+        authorName: 'Jonathan Joseph',
+        mainImage: 'https://images.unsplash.com/photo-1473520844623-167ad716dcae?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlY2glMjBwZW9wbHxlbnwwfHwwfHx8MA%3D%3D',
+        date: '2025-09-01',
+        category: 'Graphics Design',
         tags: ['HTML', 'CSS', 'JavaScript'],
         readTime: '5min read',
-        mainContent: [
-            {
-                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        mainContent: {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
                 bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
@@ -269,13 +271,12 @@ export const blogPosts = [
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 ],
-                Quote: {
-                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                quote: {
+                    theQuote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                     author: 'John Doe'
                 }
 
-            }
-        ],
+            },
         leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
         bodyImages:[
             'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -296,7 +297,7 @@ export const blogPosts = [
         author: 'John Doe',
         mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
         date: '2023-08-01',
-        category: 'Design',
+        category: 'Marketing',
         tags: ['HTML', 'CSS', 'JavaScript'],
         mainContent: [
             {
@@ -336,7 +337,7 @@ export const blogPosts = [
         author: 'John Doe',
         mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
         date: '2023-08-01',
-        category: 'Design',
+        category: 'Photography',
         tags: ['HTML', 'CSS', 'JavaScript'],
         mainContent: [
             {
@@ -376,7 +377,7 @@ export const blogPosts = [
         author: 'John Doe',
         mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
         date: '2023-08-01',
-        category: 'Design',
+        category: 'Graphics Design',
         tags: ['HTML', 'CSS', 'JavaScript'],
         mainContent: [
             {
