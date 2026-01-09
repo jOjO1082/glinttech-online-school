@@ -213,13 +213,6 @@ export const tutorDetails = [
    
 
 
-// All blog data
-
-export const blogDetails = [
-    
-]
-
-
 // All FAQ data
 
 export const faqDetails = [
@@ -246,6 +239,176 @@ export const faqDetails = [
         question: 'How long does a typical project take?',
         answer: 'Project timelines vary based on scope and complexity. Small projects may take 1–2 weeks, while larger or more custom solutions can take several weeks. Clear timelines are agreed upon before work begins.'
     },
+
+
+]
+
+
+// All Blog Data
+export const blogPosts = [
+    {
+        id: 1,
+        title: 'Web Design Basics',
+        author: 'John Doe',
+        authorImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',  
+        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        date: '2023-08-01',
+        category: 'Design',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        readTime: '5min read',
+        mainContent: [
+            {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                list: [
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                ],
+                Quote: {
+                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    author: 'John Doe'
+                }
+
+            }
+        ],
+        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        bodyImages:[
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
+        comments: 5,
+        likes: 100,
+        views: 1000,
+        share: 10,
+
+
+    },
+
+    {
+        id: 2,
+        title: 'Web Design Basics',
+        author: 'John Doe',
+        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        date: '2023-08-01',
+        category: 'Design',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        mainContent: [
+            {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                list: [
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                ],
+                Quote: {
+                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    author: 'John Doe'
+                }
+
+            }    
+        ],
+        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        bodyImages:[
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
+        comments: 5,
+        likes: 100,
+        views: 1000,
+        share: 10,
+    },
+
+    {
+        id: 3,
+        title: 'Web Design Basics',
+        author: 'John Doe',
+        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        date: '2023-08-01',
+        category: 'Design',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        mainContent: [
+            {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                list: [
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                ],
+                Quote: {
+                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    author: 'John Doe'
+                }
+
+            }
+        ],
+        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        bodyImages:[
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
+        comments: 5,
+        likes: 100,
+        views: 1000,
+        share: 10,
+    },
+
+    {
+        id: 4,
+        title: 'Web Design Basics',
+        author: 'John Doe',
+        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        date: '2023-08-01',
+        category: 'Design',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        mainContent: [
+            {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                list: [
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',                    
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',                    
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                ],
+                Quote: {
+                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    author: 'John Doe'
+                }
+
+            }
+        ],
+        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        bodyImages:[
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
+        comments: 5,
+        likes: 100,
+        views: 1000,
+        share: 10,
+    }
 
 
 ]
