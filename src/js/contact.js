@@ -36,3 +36,30 @@ faqQuestions.forEach(question => {
         answer.classList.toggle('hidden');
     })
 })
+
+
+// Make contack form work
+
+const contactForm = document.querySelector('.form');
+
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Build Link
+
+    const subject = encodeURIComponent(`New Message from ${name}`)
+    const body = encodeURIComponent(
+        `Name: ${name} \n Email: ${email} \n\n Message: ${message}`
+    );
+
+    // Replace link
+    const mailtoLink = `mailto:ikpejonathanjoseph@gmail.com?subject=${subject}&body=${body}`;
+
+    // Ope default email client
+
+    window.location.href = mailtoLink
+})

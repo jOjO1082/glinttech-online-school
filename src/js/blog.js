@@ -164,8 +164,97 @@ if (!blogDetailsObject) {
     }
 
 
-    // Show blogListContianer
-    
+     
 }
+
+
+
+
+ // Show blogListContianer
+    function showBlogCategoriesButtons(blogPosts){
+         const blogCategoryButtonsContainer = document.querySelector('.blog-category-links')
+
+         if (blogCategoryButtonsContainer) {
+            blogCategoryButtonsContainer.innerHTML = `<button class="shrink-0 h-auto px-4 py-1 bg-blue-800 rounded-lg text-slate-50 font-medium border">All</button>`;
+         }
+
+         const categories = [...new Set(blogPosts.map(cat => cat.category).filter(Boolean))]
+         console.log(categories)
+     
+         categories.forEach(eachCategory => {
+
+            blogCategoryButtonsContainer.innerHTML += `<button class="shrink-0 h-auto px-4 py-1  rounded-lg font-normal border border-slate-200 hover:bg-blue-800 transition-all duration-100 delay-75 ease-in hover:text-slate-50">${eachCategory}</button>`;
+         })
+    } 
+showBlogCategoriesButtons(blogPosts)
+
+
+
+// Change active state for blog category
+const blogCategoryButtonsContainer = document.querySelectorAll('.blog-category-links button')
+
+
+blogCategoryButtonsContainer.forEach(eachButton => {
+    eachButton.addEventListener('click', () =>{
+        blogCategoryButtonsContainer.forEach(button => {
+            button.classList.remove('bg-blue-800', 'text-slate-50', 'font-medium')
+            eachButton.classList.add('bg-blue-800', 'text-slate-50', 'font-medium')
+        })
+        
+    })
+})
+
+
+
+// Filter Blog post by Category
+
+const categorySelected = document.querySelectorAll('.blog-category-links button')
+
+categorySelected.forEach(categoryClicked => {
+    categoryClicked.addEventListener('click', () => {
+
+        const featuredContainer = document.querySelector('.featured-story-container')
+
+
+        if (categoryClicked.textContent === 'All') {
+            renderBlogs(blogPosts)
+            featuredContainer.classList.remove('hidden')
+        } else{
+            featuredContainer.classList.add('hidden')
+
+            const filteredPosts =  blogPosts.filter(everyPost => everyPost.category === categoryClicked.textContent);
+
+            renderBlogs(filteredPosts)
+        }
+
+        
+        
+
+    })
+})
+
+
+// Filter by Search Input
+
+const blogPageSearchInput = document.querySelector('.searchbox input')
+
+blogPageSearchInput.addEventListener('input', () => {
+
+    const featuredContainer = document.querySelector('.featured-story-container')
+
+    if (blogPageSearchInput.value === '') {
+        renderBlogs(blogPosts)
+        featuredContainer.classList.remove('hidden')
+    } else{
+        featuredContainer.classList.add('hidden')
+    }
+    
+    const userInput = blogPageSearchInput.value.toLowerCase();
+    const searchedFilterBlogPosts = blogPosts.filter(eachPost => eachPost.title.toLowerCase().includes(userInput))
+
+
+
+    renderBlogs(searchedFilterBlogPosts)
+})
 
 
