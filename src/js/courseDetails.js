@@ -32,6 +32,12 @@ if (!course) {
         const cardCatgory = document.getElementById('card-category');
         const coursePaymentLink = document.getElementById('link');
 
+        const instructorDetailsName = document.getElementById('details-instructor-name');
+        const instructorDetailsImage = document.getElementById('details-instructor-image');
+        const instructorDetailsCourse = document.getElementById('course');
+        const instructorDetailsStudentsCount = document.getElementById('details-student-count');
+        const instructorDetailsDocumentsCount = document.getElementById('details-document-count');
+        const instructorDetailsBio = document.getElementById('details-instructor-bio');
         
         coursePaymentLink.href = course.link;
         courseImage.src = course.image;
@@ -41,12 +47,24 @@ if (!course) {
         coursePrice.textContent = course.price
         courseRequirementDesc.textContent = course.courseInformation.requirementsDescription
         courseHeroDescription.textContent = course.heroDescription
+
         courseTutorImage.src = course.tutorImage
         courseTutorName.textContent = course.tutorName
+
+
+        instructorDetailsName.textContent = course.tutorName
+        instructorDetailsImage.src = course.tutorImage
+        instructorDetailsCourse.textContent = course.title
+        instructorDetailsStudentsCount.textContent = course.numberOfStudents
+        instructorDetailsDocumentsCount.textContent = course.numberOfDocuments
+        instructorDetailsBio.textContent = course.tutorBio
+
+        
+
         courseInfoDescription.textContent = course.courseInformation.infoDescription
         courseTutorDescription.textContent = course.tutorBio
         whatYouWillLearn.textContent = course.courseInformation.whatYouWillLearnDescription
-        numberOfStudents.textContent = course.numberOfDocuments
+        numberOfStudents.textContent = course.numberOfStudents
         numberOfDocuments.textContent = course.numberOfDocuments
 
         cardCatgory.textContent = course.category
@@ -99,7 +117,7 @@ if (courseCategoryMatches.length === 0) {
         relatedCourses.innerHTML += `
         
 
-            <a href=coursedetails.html?id=${course.id} class="button w-[200px] h-auto">
+            <a href=coursedetails.html?id=${eachCourse.id} class="button w-[200px] h-auto">
 
             <div class="related-course-card w-[200px] h-auto flex flex-col justify-start items-start gap-1 bg-white rounded-md">
                             <div class="course-image w-full h-[100px] border rounded-md overflow-hidden ">

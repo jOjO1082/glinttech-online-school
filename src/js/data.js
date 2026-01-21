@@ -1,3 +1,11 @@
+// Tutors Images
+export const tutorImages = {
+    jonathan: 'images/tutors/jonathan.jpeg',
+    otorPeter: 'images/tutors/Otor.jpeg',
+    michaelOgbu: 'images/tutors/michael.jpg',
+}
+
+
 // All course details data
 export const courseDetails = [
     {
@@ -15,7 +23,7 @@ export const courseDetails = [
         language: 'English',
         featured: false,
         heroDescription: 'Learn the fundamentals of web design and development with this comprehensive course.',
-        tutorImage: 'images/portrait.jpg',
+        tutorImage: tutorImages.jonathan,
         tutorName: 'Jonathan Joseph',
         tutorBio:  'My name is Jonathan',
         courseInformation: {
@@ -50,11 +58,14 @@ export const courseDetails = [
         duration: '2h 30m',
         lessons: '12',
         levels: 'Beginner',
+        numberOfStudents: '123',
+        numberOfDocuments: '32',
         price: '5,000',
         featured: false,
         heroDescription: 'Learn the fundamentals of Adobe Illustrator with this comprehensive course.',
-        tutorImage: 'src/images/tutor2.jpg',
+        tutorImage: tutorImages.otorPeter,
         tutorName: 'Otor Peter',
+        tutorBio: 'My name is Otor Peter',
         courseInformation: {
             infoDescription: 'This course covers the basics of Adobe Illustrator, including creating vector graphics, text, and shapes.',
             whatYouWillLearn: [
@@ -81,11 +92,14 @@ export const courseDetails = [
         duration: '2h 30m',
         lessons: '12',
         levels: 'Beginner',
+        numberOfStudents: '123',
+        numberOfDocuments: '32',
         price: '5,000',
         featured: false,
         heroDescription: 'Learn the fundamentals of digital marketing with this comprehensive course.',
-        tutorImage: 'src/images/tutor3.jpg',
+        tutorImage: tutorImages.michaelOgbu,
         tutorName: 'Michael Ogbu',
+        tutorBio: 'My name is Michael Ogbu',
         courseInformation: {
             infoDescription: 'This course covers SEO, social media marketing, email marketing, and content marketing strategies to help you grow your online presence.',
             whatYouWillLearn: [
@@ -113,11 +127,14 @@ export const courseDetails = [
         duration: '2h 30m',
         lessons: '12',
         levels: 'Beginner',
+        numberOfStudents: '123',
+        numberOfDocuments: '32',
         price: '10,000',
         featured: false,
         heroDescription: 'Learn the basics of photography with this comprehensive course.',
-        tutorImage: 'src/images/tutor4.jpg',
+        tutorImage: tutorImages.jonathan,
         tutorName: 'Jonathan Joseph',
+        tutorBio: 'My name is Jonathan',
         courseInformation: {
             infoDescription: 'This course covers the basics of photography, including camera settings, composition, and lighting techniques.',
             whatYouWillLearn: [ 
@@ -182,8 +199,8 @@ export const categoryDetails = [
 export const tutorDetails = [
     {
         id: 1,  
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        name: 'John Doe',
+        image: tutorImages.jonathan,
+        name: 'Jonathan Joseph',
         rating: 4.5,
         courseCount: 12,
         title: 'Senior Web Developer'
@@ -191,8 +208,8 @@ export const tutorDetails = [
 
     {
         id: 2,  
-        image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        name: 'Jane Smith',
+        image: tutorImages.otorPeter,
+        name: 'Otor Peter',
         rating: 4.8,
         courseCount: 8,    
         title: 'Digital Marketing Expert'            
@@ -200,11 +217,11 @@ export const tutorDetails = [
 
     {
         id: 3,  
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        image: tutorImages.michaelOgbu,
         name: 'John Doe',
         rating: 4.5,
         courseCount: 12,   
-        title: 'Senior Web Developer'             
+        title: 'Photography Specialist'             
     },
 
     
@@ -250,8 +267,8 @@ export const blogPosts = [
         id: 1,
         title: 'Web Design Basics',
         subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
-        author: 'John Doe',
-        authorImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',  
+        author: 'Jonathan Joseph',
+        authorImage: tutorImages.jonathan,  
         authorBio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
         authorName: 'Jonathan Joseph',
         mainImage: 'https://images.unsplash.com/photo-1473520844623-167ad716dcae?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlY2glMjBwZW9wbHxlbnwwfHwwfHx8MA%3D%3D',
@@ -294,111 +311,34 @@ export const blogPosts = [
     {
         id: 2,
         title: 'Web Design Basics',
+        subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
         author: 'John Doe',
-        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        date: '2023-08-01',
-        category: 'Marketing',
-        tags: ['HTML', 'CSS', 'JavaScript'],
-        mainContent: [
-            {
-                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                list: [
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                ],
-                Quote: {
-                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    author: 'John Doe'
-                }
-
-            }    
-        ],
-        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-        bodyImages:[
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
-        comments: 5,
-        likes: 100,
-        views: 1000,
-        share: 10,
-    },
-
-    {
-        id: 3,
-        title: 'Web Design Basics',
-        author: 'John Doe',
-        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        date: '2023-08-01',
-        category: 'Photography',
-        tags: ['HTML', 'CSS', 'JavaScript'],
-        mainContent: [
-            {
-                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                list: [
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                ],
-                Quote: {
-                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    author: 'John Doe'
-                }
-
-            }
-        ],
-        leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-        bodyImages:[
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',],
-        comments: 5,
-        likes: 100,
-        views: 1000,
-        share: 10,
-    },
-
-    {
-        id: 4,
-        title: 'Web Design Basics',
-        author: 'John Doe',
-        mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        date: '2023-08-01',
+        authorImage: 'images/tutors/jonathan.jpeg',  
+        authorBio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
+        authorName: 'Jonathan Joseph',
+        mainImage: 'https://images.unsplash.com/photo-1473520844623-167ad716dcae?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlY2glMjBwZW9wbHxlbnwwfHwwfHx8MA%3D%3D',
+        date: '2025-09-01',
         category: 'Graphics Design',
         tags: ['HTML', 'CSS', 'JavaScript'],
-        mainContent: [
-            {
-                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+        readTime: '5min read',
+        mainContent: {
+                leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.lorem100',
                 bodyOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 bodyTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 bodyThree: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 list: [
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',                    
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',                    
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                 ],
-                Quote: {
-                    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
+                quote: {
+                    theQuote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
                     author: 'John Doe'
                 }
 
-            }
-        ],
+            },
         leader: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.',
         bodyImages:[
             'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -409,7 +349,12 @@ export const blogPosts = [
         likes: 100,
         views: 1000,
         share: 10,
-    }
+
+
+    },
+    
 
 
 ]
+
+

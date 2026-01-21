@@ -6,8 +6,6 @@ import { tutorDetails } from './data.js';
 
 // Render featured courses on the homepage
 
-
-
  export function renderFilteredCourses(courseDetails) {
 
     const featuredCoursesContainer = document.querySelector('.courses-cards-container');
@@ -128,6 +126,9 @@ if (tutorCardsContainer) {
 });
 
 }
+
+// Render featured courses on page load
+renderFilteredCourses(courseDetails);
 
 // Filter course by category function
 const filterButtons = document.querySelectorAll('.filter-button');
